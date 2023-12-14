@@ -1,21 +1,11 @@
-let todos: string[] = [];
+// Empty array
+let numbers: number[] = [];
 
-function addTodo(todo: string): void {
-  todos.push(todo);
-  console.log(`Added "${todo}" to your list!`);
-}
+// Array with initial values
+let fruits: string[] = ["apple", "banana", "orange"];
 
-function listTodos(): void {
-  if (!todos.length) {
-    console.log("No tasks to show!");
-    return;
-  }
-  console.log("Your to-do list:");
-  for (const todo of todos) {
-    console.log(`- ${todo}`);
-  }
-}
+// Array from another array
+let copiedFruits: string[] = fruits.slice();
 
-addTodo("Buy groceries");
-addTodo("Finish project report");
-listTodos();
+// Array with specific length
+let emptyStringArray: string[] = new Array(10);
