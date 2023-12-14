@@ -1,11 +1,3 @@
-
-const x: number = 10;
-const y: number = 25;
-const z: number = x + y;
-
-console.log("Sum of x+ y = " + z);
-
-
 let todos: string[] = [];
 
 function addTodo(todo: string): void {
